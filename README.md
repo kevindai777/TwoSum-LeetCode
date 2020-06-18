@@ -3,6 +3,6 @@
 Leetcode Question 1 (Easy)
 
 Techniques Used in Question:
--Hashmap
+Hashmap
 
 https://leetcode.com/problems/two-sum/
