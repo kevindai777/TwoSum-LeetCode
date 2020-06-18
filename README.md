@@ -5,4 +5,4 @@ Leetcode Question 1 (Easy)
 Techniques Used in Question:
 Hashmap
 
-[Link](https://leetcode.com/problems/two-sum/)
+[Link to question](https://leetcode.com/problems/two-sum/)
