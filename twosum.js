@@ -9,7 +9,7 @@ let target = 9
 for (let i = 0; i < array.length; i++) {
   for (let j = 0; j < array.length; j++) {
     if (array[i] + array[j] === target) {
-      console.log([i,j])
+      return [i,j]
     }
   }
 }
@@ -19,23 +19,26 @@ for (let i = 0; i < array.length; i++) {
 //O(n) solution 2-pass (2 for-loops)
 let map = {}
 
-//put all elements into map by value + index
+//Put all elements into map by value + index
 for (let i = 0; i < array.length; i++) {
   map[array[i]] = i
 }
 
+//The complement represents the other part of the return array
+//If it exists and does NOT match the current index, return it
 for (let i = 0; i < array.length; i++) {
   let complement = target - array[i]
   if (map[complement] && map[complement] !== i) {
-    console.log([i, map[complement]])
+    return [i, map[complement]]
   }
 }
-
 
 
 //O(n) solution 1-pass (1 for-loop)
 let map1 = {}
 
+//Basically the above solution but condensed into one loop.
+//The map is filled out as long as the complement does not exist.
 for (let i = 0; i < array.length; i++) {
   let complement1 = target - array[i]
   if (map1[complement1] !== undefined) {
