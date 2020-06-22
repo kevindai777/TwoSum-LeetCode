@@ -4,7 +4,6 @@ let array = [2,7,9,15]
 let target = 9
 
 
-
 //O(n^2) solution (nested for-loops)
 for (let i = 0; i < array.length; i++) {
   for (let j = 0; j < array.length; j++) {
@@ -13,7 +12,6 @@ for (let i = 0; i < array.length; i++) {
     }
   }
 }
-
 
 
 //O(n) solution 2-pass (2 for-loops)
